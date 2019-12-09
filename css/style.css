@@ -1,0 +1,344 @@
+@charset "UTF-8";
+@font-face {
+  font-family: raleway;
+  src: url("../fonts/Raleway-Regular.ttf");
+  font-weight: 400; }
+@font-face {
+  font-family: montserrat;
+  src: url("../fonts/Montserrat-Light.ttf");
+  font-weight: 300; }
+@font-face {
+  font-family: raleway;
+  src: url("../fonts/Raleway-Medium.ttf");
+  font-weight: 500; }
+@font-face {
+  font-family: raleway;
+  src: url("../fonts/Raleway-ExtraBold.ttf");
+  font-weight: 800; }
+@font-face {
+  font-family: raleway;
+  src: url("../fonts/Raleway-SemiBold.ttf.ttf");
+  font-weight: 600; }
+/* line 26, style.scss */
+header {
+  width: 1920px;
+  height: 1024px;
+  background-image: url(../img/header.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 35px;
+  padding-bottom: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/* line 41, style.scss */
+.nav {
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 375px;
+  -ms-flex-item-align: start;
+      align-self: flex-start; }
+  /* line 48, style.scss */
+  .nav__logo {
+    width: 181px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    margin-right: 219px; }
+    /* line 55, style.scss */
+    .nav__logo svg {
+      fill: #ffffff; }
+    /* line 58, style.scss */
+    .nav__logo span {
+      font-family: raleway, arial;
+      font-weight: 400;
+      font-size: 34px;
+      letter-spacing: -1.36px;
+      color: #ffffff; }
+  /* line 67, style.scss */
+  .nav__logo:hover svg {
+    fill: #c7b299; }
+  /* line 70, style.scss */
+  .nav__logo:hover span {
+    color: #c7b299; }
+  /* line 74, style.scss */
+  .nav__bar {
+    width: 640px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 64px; }
+  /* line 80, style.scss */
+  .nav__link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: montserrat, arial;
+    font-weight: 300; }
+  /* line 87, style.scss */
+  .nav__link:hover {
+    color: #c7b299; }
+  /* line 90, style.scss */
+  .nav__bucket {
+    fill: #ffffff;
+    margin-right: 27px; }
+  /* line 95, style.scss */
+  .nav__search input[type="search"] {
+    width: 24px;
+    height: 24px;
+    outline: none;
+    /* Для синий ободки */
+    border: 0;
+    background: transparent;
+    background-image: url("../img/search.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none; }
+  /* line 107, style.scss */
+  .nav__search input[type="search"]:focus {
+    background-color: #fff;
+    border-radius: 10px;
+    padding-left: 7px;
+    width: 200px;
+    -webkit-transition: width 1s ease-out;
+    transition: width 1s ease-out;
+    background-position: right; }
+
+/* line 117, style.scss */
+.carousel {
+  width: 1620px;
+  height: 608px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto; }
+  /* line 123, style.scss */
+  .carousel__button {
+    width: 40px;
+    height: 73px;
+    outline: none;
+    /* Для синий ободки */
+    border: 0;
+    background: transparent;
+    margin-top: 92px; }
+  /* line 131, style.scss */
+  .carousel .button-left {
+    fill: #9e9d9b; }
+  /* line 134, style.scss */
+  .carousel .button-right {
+    fill: #d3c1ad; }
+  /* line 137, style.scss */
+  .carousel .button-left:hover {
+    fill: white; }
+  /* line 140, style.scss */
+  .carousel .button-right:hover {
+    fill: white; }
+  /* line 143, style.scss */
+  .carousel .button-left:active {
+    fill: #000000; }
+  /* line 146, style.scss */
+  .carousel .button-right:active {
+    fill: #000000; }
+  /* line 149, style.scss */
+  .carousel__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  /* line 154, style.scss */
+  .carousel__get_started {
+    width: 170px;
+    height: 53px;
+    text-transform: uppercase;
+    -webkit-box-shadow: inset 0 -3px 0 #736357;
+            box-shadow: inset 0 -3px 0 #736357;
+    border-radius: 3px;
+    background-color: #998675;
+    border: none;
+    color: #ffffff;
+    font-family: "raleway";
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 23px;
+    outline: none;
+    margin-bottom: 327px; }
+  /* line 170, style.scss */
+  .carousel__get_started:hover {
+    background-color: #73685E; }
+  /* line 173, style.scss */
+  .carousel__get_started:active {
+    background-color: #111111;
+    -webkit-box-shadow: inset 0 -3px 0 #000000;
+            box-shadow: inset 0 -3px 0 #000000; }
+  /* line 177, style.scss */
+  .carousel__tittle_1 {
+    color: #ffffff;
+    font-family: raleway;
+    font-size: 36px;
+    font-weight: 500;
+    display: block; }
+  /* line 184, style.scss */
+  .carousel__tittle_2 {
+    color: #ffffff;
+    font-family: "raleway";
+    font-size: 52px;
+    font-weight: 800;
+    display: block; }
+  /* line 191, style.scss */
+  .carousel__descr {
+    width: 570px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 53px; }
+  /* line 201, style.scss */
+  .carousel__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 99px;
+    height: 15px; }
+  /* line 208, style.scss */
+  .carousel__link {
+    display: none; }
+  /* line 211, style.scss */
+  .carousel__link:checked + label, .carousel__link:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer; }
+  /* line 217, style.scss */
+  .carousel__link:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: -6px;
+    width: 11px;
+    height: 11px;
+    background-color: #929295;
+    border-radius: 100%; }
+  /* line 227, style.scss */
+  .carousel__link:checked + label:before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: -9px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #dddddd;
+    background-color: #transparent;
+    border-radius: 100%; }
+
+/* line 239, style.scss */
+main {
+  width: 1920px; }
+
+/* line 242, style.scss */
+.cons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 372px; }
+  /* line 247, style.scss */
+  .cons__item {
+    width: 266px;
+    height: 215px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    margin-right: 33px; }
+  /* line 256, style.scss */
+  .cons__item:nth-child(2) {
+    width: 271px; }
+  /* line 259, style.scss */
+  .cons__item:nth-child(4) {
+    margin-right: 0; }
+  /* line 262, style.scss */
+  .cons__icon {
+    fill: #555555; }
+  /* line 265, style.scss */
+  .cons__title {
+    color: #555555;
+    font-family: "raleway";
+    font-size: 22px;
+    font-weight: 600; }
+  /* line 271, style.scss */
+  .cons__text {
+    color: #8c8c8c;
+    font-family: montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center; }
+  /* line 280, style.scss */
+  .cons__item:hover .cons__icon {
+    fill: #c7b299; }
+  /* line 283, style.scss */
+  .cons__item:hover .cons__title {
+    color: #c7b299; }
+  /* line 286, style.scss */
+  .cons__item:hover .cons__text {
+    color: #c7b299; }
+
+/*# sourceMappingURL=style.css.map */
