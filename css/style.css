@@ -307,23 +307,33 @@ main {
         -ms-flex-align: center;
             align-items: center;
     text-decoration: none;
-    margin-right: 33px; }
-  /* line 256, style.scss */
+    margin-right: 33px;
+    position: relative; }
+  /* line 257, style.scss */
+  .cons__item:before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    background-color: #f1eee9;
+    left: 99px;
+    top: 240px; }
+  /* line 266, style.scss */
   .cons__item:nth-child(2) {
     width: 271px; }
-  /* line 259, style.scss */
+  /* line 269, style.scss */
   .cons__item:nth-child(4) {
     margin-right: 0; }
-  /* line 262, style.scss */
+  /* line 272, style.scss */
   .cons__icon {
     fill: #555555; }
-  /* line 265, style.scss */
+  /* line 275, style.scss */
   .cons__title {
     color: #555555;
     font-family: "raleway";
     font-size: 22px;
     font-weight: 600; }
-  /* line 271, style.scss */
+  /* line 281, style.scss */
   .cons__text {
     color: #8c8c8c;
     font-family: montserrat;
@@ -331,14 +341,17 @@ main {
     font-weight: 300;
     line-height: 24px;
     text-align: center; }
-  /* line 280, style.scss */
+  /* line 290, style.scss */
   .cons__item:hover .cons__icon {
     fill: #c7b299; }
-  /* line 283, style.scss */
+  /* line 293, style.scss */
   .cons__item:hover .cons__title {
     color: #c7b299; }
-  /* line 286, style.scss */
+  /* line 296, style.scss */
   .cons__item:hover .cons__text {
     color: #c7b299; }
+  /* line 299, style.scss */
+  .cons__item:hover:before {
+    background-color: #c7b299; }
 
 /*# sourceMappingURL=style.css.map */
